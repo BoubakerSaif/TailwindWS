@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- This is header Section -->
+    <header class="flex h-24 justify-around items-center">
+      <h1
+        class="text-5xl font-semibold hover:scale-125 duration-500 cursor-pointer"
+      >
+        TRAVEL-TOUR<span class="text-orange-600">.</span>
+      </h1>
+
+      <div class="flex gap-6 items-center">
+        <a href="#" class="uppercase font-semibold">Aceuill |</a>
+        <a href="#" class="uppercase font-semibold">Destination |</a>
+        <a href="#" class="uppercase font-semibold">Circuits |</a>
+        <a href="#" class="uppercase font-semibold">Contact |</a>
+      </div>
+    </header>
+    <!-- This is main Section -->
+    <main class="relative flex justify-center items-center cursor-pointer">
+      <img src="/main.jpg" />
+      <div class="absolute text-center flex flex-col items-center gap-24">
+        <p class="flex flex-col text-5xl text-gray-700 uppercase">
+          <span> Organisez votre</span>
+          <span class="font-bold">Voyage sur mesure</span>
+        </p>
+        <button
+          class="bg-orange-500 w-fit py-2 px-7 text-white rounded-md font-medium hover:bg-cyan-500"
+        >
+          Par ici
+        </button>
+      </div>
+    </main>
+    <!-- This is plan Section -->
+
+    <section class="flex h-96 justify-center items-center gap-9">
+      <div class="flex flex-col items-center justify-around h-[260px]">
+        <img src="/steps-icon-1.png" class="w-20" />
+        <h1 class="font-bold text-xl">PLANIFIER</h1>
+        <p class="w-64 text-sm h-20 text-gray-500">
+          Confiez-nous vos rêves d’évasion : en famille ou entre amis, nous
+          trouverons la formule qui comblera vos attentes.
+        </p>
+      </div>
+      <div class="flex flex-col items-center h-[260px] justify-around">
+        <img src="/steps-icon-2.png" class="w-20" />
+        <h1 class="font-bold text-xl">ORGANISER</h1>
+        <p class="w-64 text-sm h-20 text-gray-500">
+          Bénéficiez de l’expertise de nos spécialistes de chaque destination,
+          ils vous accompagnent dans la réalisation de votre voyage.
+        </p>
+      </div>
+      <div class="0 flex flex-col items-center h-[260px] justify-around">
+        <img src="/steps-icon-3.png" class="w-20" />
+        <h1 class="font-bold text-xl">VOYAGER</h1>
+        <p class="w-64 text-sm h-20 text-gray-500">
+          Nous nous chargeons d’assurer votre sécurité et de veiller à votre
+          pleine sérénité tout au long de votre voyage.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
