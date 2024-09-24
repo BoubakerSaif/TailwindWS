@@ -7,14 +7,14 @@
   </head>
   <body>
     <!-- This is header Section -->
-    <header class="flex h-24 justify-around items-center">
+    <header class="flex max-md:flex-col h-24 justify-around items-center">
       <h1
-        class="text-5xl font-semibold hover:scale-125 duration-500 cursor-pointer"
+        class="text-5xl max-lg:text-3xl font-semibold hover:scale-125 duration-500 cursor-pointer"
       >
         TRAVEL-TOUR<span class="text-orange-600">.</span>
       </h1>
 
-      <div class="flex gap-6 items-center">
+      <div class="flex gap-6 max-md:gap-2 items-center max-lg:text-sm">
         <a href="#" class="uppercase font-semibold">Aceuill |</a>
         <a href="#" class="uppercase font-semibold">Destination |</a>
         <a href="#" class="uppercase font-semibold">Circuits |</a>
@@ -22,15 +22,21 @@
       </div>
     </header>
     <!-- This is main Section -->
-    <main class="relative flex justify-center items-center cursor-pointer">
+    <main
+      class="relative flex justify-center items-center cursor-pointer max-sm:text-xs"
+    >
       <img src="/main.jpg" />
-      <div class="absolute text-center flex flex-col items-center gap-24">
-        <p class="flex flex-col text-5xl text-gray-700 uppercase">
+      <div
+        class="absolute text-center flex flex-col items-center max-sm:gap-2 sm:gap-8 md:gap-14 lg:gap-24"
+      >
+        <p
+          class="flex flex-col text-5xl max-lg:text-4xl max-md:text-2xl text-gray-700 uppercase"
+        >
           <span> Organisez votre</span>
           <span class="font-bold">Voyage sur mesure</span>
         </p>
         <button
-          class="bg-orange-500 w-fit py-2 px-7 text-white rounded-md font-medium hover:bg-cyan-500"
+          class="bg-orange-500 w-fit py-2 max-sm:px-3 px-7 text-white rounded-md font-medium hover:bg-cyan-500"
         >
           Par ici
         </button>
@@ -38,7 +44,9 @@
     </main>
     <!-- This is plan Section -->
 
-    <section class="flex h-96 justify-center items-center gap-9">
+    <section
+      class="flex h-96 max-lg:h-[550px] max-md:h-screen max-lg:flex-wrap justify-center items-center gap-9"
+    >
       <div class="flex flex-col items-center justify-around h-[260px]">
         <img src="/steps-icon-1.png" class="w-20" />
         <h1 class="font-bold text-xl">PLANIFIER</h1>
@@ -65,7 +73,9 @@
       </div>
     </section>
 
-    <section class="bg-[#efefef] h-80 flex justify-center items-center gap-8">
+    <section
+      class="bg-[#efefef] h-80 max-md:h-[600px] max-lg:h-[700px] max-lg:flex-wrap flex justify-center items-center gap-8"
+    >
       <div class="relative w-fit">
         <div
           class="absolute w-40 h-full bg-[#fffffaf2] flex flex-col justify-around items-center text-center px-3 rounded-l-sm"
@@ -216,10 +226,12 @@
     <section class="h-60 text-center flex flex-col justify-around items-center">
       <h1 class="uppercase text-2xl font-bold text-gray-800">Contactez-nous</h1>
       <hr class="border-[1px] border-blue-300 w-72" />
-      <p class="text-xs w-[750px] text-center">
-        Princeneer tour agence de voyage nous savons que voyager est une
-        aventure humaine mais également un engagement financier important pour
-        vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte
+      <p
+        class="text-xs w-[750px] max-md:w-[550px] max-sm:w-[300px] text-center"
+      >
+        Travel tour agence de voyage nous savons que voyager est une aventure
+        humaine mais également un engagement financier important pour vous.
+        C'est pourquoi nous mettons un point d'honneur à prendre en compte
         chacune de vos attentes pour vous aider dans la préparation de votre
         séjour, circuit ou voyage sur mesure.
       </p>
@@ -247,6 +259,7 @@
         </button>
       </div>
     </section>
+
     <footer class="h-52">
       <div
         class="h-44 bg-[#444] text-center flex flex-col justify-center gap-8"
